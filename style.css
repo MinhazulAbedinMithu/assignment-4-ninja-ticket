@@ -12,6 +12,7 @@ body{
     background-position: center center;
     background-attachment: scroll;
     background-size: cover;
+    height: 100vh;
 }
 nav{
     height: 50px;
@@ -97,11 +98,16 @@ nav ul li a:hover, a.active{
     min-width: 300px;
 }
 .plus-minus-btn{
-    color: #3352F2;
-    font-size: 30px;
     padding: 2px;
-    margin: 10px 5px 0px 0px;
-    word-spacing: 20px;
+    margin: 15px 5px 0px 0px;
+    word-spacing: 25px;
+    
+}
+.plus-minus-btn button i{
+    border: 1px solid red;
+    background-color: #E33741;
+    padding: 5px;
+    font-size: 23px;
 }
 .booking-form .inputs{
     display: grid;
@@ -121,4 +127,51 @@ nav ul li a:hover, a.active{
 .amount{
     display: flex;
     justify-content: space-between;
+}
+
+/* booking message */
+#booked-message{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+}
+.content{
+    background-color: #fff;
+    width: 30%;
+    padding: 50px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+}
+.content table {
+    border-collapse: collapse;
+    margin: 40px auto;
+}
+.content h1{
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+.content table tr:nth-child(1), .content table tr:nth-child(4){
+    background-color: rgb(247, 77, 77);
+    font-weight: bold;
+    font-size: 18px;
+}
+.content table tr:nth-child(2){
+    background-color: rgb(101, 168, 168);
+}
+.content table tr:nth-child(3){
+    background-color: rgb(123, 209, 73);
+}
+.content td, .content th {
+    padding: 10px 25px;
+    text-align: left;
+}
+#booked-message img{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    bottom: 50%;
+    left: 61%;
 }
